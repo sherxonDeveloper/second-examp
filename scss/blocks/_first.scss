@@ -1,0 +1,140 @@
+.first{
+  padding-top: 74px;
+  &__open{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 75px;
+  }
+  &__title{
+    max-width: 546px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    color: #36536b;
+  }
+  &__schedule{
+    border: none;
+    background-color: #ba4270;
+    border-radius: 24px;
+    padding: 15px 25px;
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #fbfcfe;
+  }
+  &__form{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fbfcfe;
+    border-radius: 24px;
+    padding-left: 27px;
+    &:hover{
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+  }
+  &__input{
+    border: none; 
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536b;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &__text{
+    margin-top: 16px; 
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;
+    &--span {
+      color: #36536b;
+      font-weight: bold;
+    }
+  } 
+  &__img--box {
+    margin-right: 90px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .first__img--box{
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .first__open{
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+  .first__img--box{
+    margin-top: 62px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .first__form{
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    margin-bottom: 16px;
+  }
+  .first__box{
+    text-align: center;
+  }
+  .first__title{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    margin-bottom: 22px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+ 
+}
+@media screen and (max-width: 512px) {
+  .first__title{
+    max-width: 310px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 430px){
+  .first__form{
+    display: block;
+    background-color: #edf3f8;
+  }
+  .first__input{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding: 15px 27px;
+    padding-right: 158px;
+    background: #ffffff;
+    border-radius: 24px;
+    &:hover{
+      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    }
+  }
+    .first__schedule{
+      margin-bottom: 24px;
+      width: 100%;
+    }
+}
+@media screen and (max-width: 408px){
+ .first__schedule{
+   width: 290px;
+ }
+ .first__input{
+width: 290px;
+ }
+}
